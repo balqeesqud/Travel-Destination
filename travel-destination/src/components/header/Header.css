@@ -1,0 +1,17 @@
+.page-header {
+  font-size: 24px;
+  color: rgb(71, 67, 67);
+  padding: 20px;
+  background-color: #f5f5f5;
+  margin-bottom: 10px;
+  /* background-color: red; */
+}
+
+.home-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font: 40px light grey;
+  /* margin-left: 30%; */
+  cursor: pointer;
+}

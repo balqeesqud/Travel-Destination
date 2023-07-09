@@ -1,0 +1,22 @@
+.home-content {
+  margin-left: 40%;
+  width: 300px;
+  margin-top: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #cab2b2;
+}
+
+.home-content h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.home-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}

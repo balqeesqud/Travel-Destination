@@ -7,20 +7,25 @@ import db from '../../data/db.json';
 // const { name, image } = props;
 
 function Tours(props) {
-  const TourElement = ({ name, image }) => (
-    <div>
-      <h2>{name}</h2>
-      <img src={image} alt={name} />
-    </div>
-  );
+  // const TourElement = ({ name, image }) => (
+  //   <div>
+  //     <h2>{name}</h2>
+  //     <img src={image} alt={name} />
+  //   </div>
+  // );
 
+    
   return (
     <div className="home-content">
       <h2>{props.name}</h2>
       <img src={props.image} alt={props.name} />
 
       {db.map((obj, i) => (
-        <TourElement key={i} name={obj.name} image={obj.image} />
+         <div key={i}>
+         <h2>{obj.name}</h2>
+         <img src={obj.image} alt={obj.name} />
+       </div>
+        // <TourElement key={i} name={obj.name} image={obj.image} />
       ))}
     </div>
   );

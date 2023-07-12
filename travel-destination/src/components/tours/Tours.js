@@ -14,3 +14,4 @@ function Tours({ data }) {
   );
 }
 export default Tours;
+

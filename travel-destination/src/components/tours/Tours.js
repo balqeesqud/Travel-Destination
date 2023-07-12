@@ -1,36 +1,17 @@
+import Tour from './tour/Tour';
+import { Link } from 'react-router-dom';
 import './Tours.css';
-import db from '../../data/db.json';
 
-//name and image props as arguments using destructuring
-// it can be written without destructuring (props) is an object
-//const TourItem = (props) => {
-// const { name, image } = props;
-
-function Tours(props) {
-  // const TourElement = ({ name, image }) => (
-  //   <div>
-  //     <h2>{name}</h2>
-  //     <img src={image} alt={name} />
-  //   </div>
-  // );
-
-    
+function Tours({ data }) {
   return (
-    <div className="home-content">
-      <h2>{props.name}</h2>
-      <img src={props.image} alt={props.name} />
-
-      {db.map((obj, i) => (
-         <div key={i}>
-         <h2>{obj.name}</h2>
-         <img src={obj.image} alt={obj.name} />
-       </div>
-        // <TourElement key={i} name={obj.name} image={obj.image} />
+    <div className="card-container">
+      {data.map((tour) => (
+        <Link key={tour.id} to={`/tours/${tour.id}`} className="card-link">
+          <Tour tour={tour} />
+        </Link>
       ))}
     </div>
   );
 }
-
 export default Tours;
 
-//+++++++

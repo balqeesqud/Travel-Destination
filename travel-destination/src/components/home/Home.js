@@ -3,13 +3,16 @@ import Footer from '../footer/Footer';
 import Tours from '../tours/Tours';
 import './Home.css';
 
-function Home() {
+
+function Home(props) {
   return (
-    <div className="home-container">
+    <>
       <Header />
-      <Tours/>
+      <div className="card-container">
+        <Tours data={props.tour} />
+      </div>
       <Footer />
-    </div>
+    </>
   );
 }
 export default Home;

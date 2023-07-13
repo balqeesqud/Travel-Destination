@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <nav>
       <Link to="/">Home</Link>
-      <Link to="/city/:id">Tour Details</Link>
+      {/* <Link to="/city/:id">Tour Details</Link> */}
     </nav>
   );
 }
